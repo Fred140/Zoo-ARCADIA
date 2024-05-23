@@ -12037,10 +12037,9 @@ p {
   position: relative;
 }
 .hero-scene2 .hero-scene2-content {
-  height: 570px;
+  height: 600px;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  display: flex;
-  background-position: center;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */
