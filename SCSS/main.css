@@ -11984,7 +11984,7 @@ footer.footer {
 
 p {
   font-family: "Hind Madurai", serif;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .hero-scene {
@@ -11999,7 +11999,7 @@ p {
   height: 100%;
   background-image: url(../Assets/dolphins.jpg);
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   filter: brightness(0.8);
 }
 .hero-scene * {
@@ -12011,6 +12011,10 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .hero-scene2 {
@@ -12025,16 +12029,17 @@ p {
   height: 100%;
   background-image: url(../Assets/lions.jpg);
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   filter: brightness(0.8);
 }
 .hero-scene2 * {
   position: relative;
 }
 .hero-scene2 .hero-scene2-content {
-  height: 480px;
+  height: 500px;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   display: flex;
+  background-position: center;
 }/*# sourceMappingURL=main.css.map */
