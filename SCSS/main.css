@@ -11976,11 +11976,11 @@ main {
 }
 
 footer.footer {
-  padding: 5px;
+  padding: 0px;
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 120px;
+  height: 100px;
 }
 
 p {
@@ -12007,7 +12007,7 @@ p {
   position: relative;
 }
 .hero-scene .hero-scene-content {
-  height: 150px;
+  height: 180px;
   display: flex;
   flex-direction: column;
   align-items: center;
