@@ -28,6 +28,7 @@ p{
 
 .hero-scene{
     position: relative;
+    margin-bottom: 15px;
     &::before{
         content:"";
         position:absolute;
@@ -62,6 +63,7 @@ p{
 
 .hero-scene2{
     position: relative;
+    margin-bottom: 15px;
     &::before{
         content:"";
         position:absolute;
@@ -93,6 +95,7 @@ p{
 
 .hero-scene3{
     position: relative;
+    margin-bottom: 15px;
     &::before{
         content:"";
         position:absolute;
@@ -133,6 +136,7 @@ p{
 
 .hero-scene4{
     position: relative;
+    margin-bottom: 15px;
     &::before{
         content:"";
         position:absolute;
@@ -163,5 +167,9 @@ p{
 }
 
 .btn2{
-    color: #1E9E09;
+   background-color: #1E9E09;
+}
+
+.form-label{
+    color: #0968C0;
 }
