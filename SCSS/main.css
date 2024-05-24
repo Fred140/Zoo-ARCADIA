@@ -12079,4 +12079,30 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.hero-scene4 {
+  position: relative;
+}
+.hero-scene4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../Assets/lions.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.8);
+}
+.hero-scene4 * {
+  position: relative;
+}
+.hero-scene4 .hero-scene4-content {
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */
