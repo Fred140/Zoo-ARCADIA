@@ -12104,6 +12104,20 @@ p {
   position: relative;
 }
 
+.action-image-buttons {
+  position: absolute;
+  width: 92%;
+  padding: 5px;
+  display: flex;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.action-image-buttons:hover {
+  opacity: 1;
+  filter: brightness(0.8);
+}
+
 .btn {
   position: absolute;
   top: 50%;
