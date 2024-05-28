@@ -12021,7 +12021,7 @@ p {
 
 .hero-scene2 {
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 .hero-scene2::before {
   content: "";
