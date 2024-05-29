@@ -12103,6 +12103,12 @@ p {
 .image-card {
   position: relative;
 }
+.image-card .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .action-image-buttons {
   position: absolute;
@@ -12116,13 +12122,6 @@ p {
 .action-image-buttons:hover {
   opacity: 1;
   filter: brightness(0.8);
-}
-
-.btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .hero-scene4 {

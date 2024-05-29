@@ -153,6 +153,12 @@ p{
 
 .image-card{
      position:relative;
+     .btn{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+    }
 }
 
 .action-image-buttons{
@@ -170,12 +176,7 @@ p{
 }
 
 
-.btn{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-}
+
 
 .hero-scene4{
     position: relative;
