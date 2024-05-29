@@ -9,8 +9,10 @@ export const allRoutes = [
     new Route("/avis", "Avis", "/pages/avis.html"),
     new Route("/connexion", "Connexion Staff", "/pages/auth/connexionstaff.html"),
     new Route("/signupstaff", "Inscription Staff", "/pages/auth/signupstaff.html"),
-    new Route("/accountempl", "Mon compte", "/pages/auth/accountempl.html"),
-    new Route("/editpassword", "Changement de mot de passe", "/pages/auth/editpassword.html"),   
+    new Route("/accountempl", "Mon compte Employé", "/pages/auth/accountempl.html"),
+    new Route("/editpassword", "Changement de mot de passe", "/pages/auth/editpassword.html"),
+    new Route("/accountvete", "Mon compte Vétérinaire", "/pages/auth/accountvete.html"), 
+    new Route("/accountadmin", "Mon compte Administrateur", "/pages/auth/accountadmin.html"),       
 ];
 
 //Le titre s'affiche comme ceci : Route.titre - websitename
