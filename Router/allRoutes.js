@@ -13,7 +13,7 @@ export const allRoutes = [
     new Route("/editpassword", "Changement de mot de passe", "/pages/auth/editpassword.html"),
     new Route("/accountvete", "Mon compte Vétérinaire", "/pages/auth/accountvete.html"), 
     new Route("/accountadmin", "Mon compte Administrateur", "/pages/auth/accountadmin.html"),
-    new Route("/loginadmin", "Connexion Administrateur", "/pages/auth/loginadmin.html"),         
+    new Route("/loginadmin", "Connexion Administrateur", "/pages/auth/loginadmin.html", "/js/auth/loginadmin.js"),         
 ];
 
 //Le titre s'affiche comme ceci : Route.titre - websitename
