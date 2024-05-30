@@ -7,12 +7,13 @@
 
 <!-- Wrapper container -->
 <div class="container py-4">
-
+    <div class="action-image-buttons">
+      <button class="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#EditionTextModal"><i class="bi bi-pencil-square"></i></button>
+    </div>    
   <!-- Bootstrap 5 starter form -->
   <form id="contactForm">
-
     <!-- Name input -->
-    <div class="mb-3">
+    <div class="mb-3 pt-5">
       <label class="form-label" for="name">Title</label>
       <input class="form-control" id="name" type="text" placeholder="Title" data-sb-validations="required" />
       <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
@@ -48,23 +49,41 @@
       <button class="btn btn-primary" type="submit">Submit</button>
     </div>
     <br/>
-    <div class="d-grid">
-      <div class="action-image-buttons">
-        <button class="button" class="btn btn-outline-light"><i class="bi bi-pencil-square"></i></button>
-    </div>   
     <br/> 
     <br/>
-      <h3>Horaires d'ouverture du Zoo:<br/></h3>
-      <br/>
-      <p> Mardi 9h00:17h00<br/>
+      <div class="text-center">
+         <h3>Horaires d'ouverture du Zoo:<br/></h3>
+         <br/>
+         <p> Mardi 9h00:17h00<br/>
           Mercredi 9h00:17h00<br/>
           Jeudi 9h00:17h00</br/>
           Vendredi 9h00:17h00<br/>
           Samedi 9h00:18h00
          </p>
+      </div>
+ </form>
+</div>
+
+<!--Modal Edition text-->
+<div class="modal fade" id="EditionTextModal" tabindex="-1" aria-labelledby="EditionTextModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="EditionTextModalLabel">Edition text</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+          <form>
+              <div class="mb-3">
+                <label for="TextInput" class="form-label"></label>
+              </div>
+              <div class="modal-body">
+                <textarea class="form-control" style="min-width: 100%" id="TextInput"></textarea>
+              </div>
+              <div class="text-center pb-3">
+              <button type="button" class="btn btn-primary">Enregistrer</button>
+              </div>
+            </form>
+      </div>
     </div>
-
-
-  </form>
-
+  </div>
 </div>
