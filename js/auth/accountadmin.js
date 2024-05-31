@@ -5,7 +5,6 @@ const inputPrenom = document.getElementById("PrenomInput");
 const inputMail = document.getElementById("EmailInput");
 const inputPassword = document.getElementById("PasswordInput");
 const inputValidationPassword = document.getElementById("ValidatePasswordInput");
-const inputValidationProfession = document.getElementById("SelectProfession");
 const btnValidation = document.getElementById("btn-validation-inscription");
 
 inputNom.addEventListener("keyup", validateForm);
@@ -13,7 +12,7 @@ inputPrenom.addEventListener("keyup", validateForm);
 inputMail.addEventListener("keyup", validateForm);
 inputPassword.addEventListener("keyup", validateForm);
 inputValidationPassword.addEventListener("keyup", validateForm);
-inputValidationProfession.addEventListener("keyup", validateForm);
+
 
 
 function validateForm() {
@@ -22,9 +21,8 @@ function validateForm() {
     const mailOk = validateMail(inputMail);
     const passwordOk = validatePassword(inputPassword);
     const passwordConfirmOk = validateConfirmationPassword(inputPassword, inputValidationPassword);
-    const validationpdOk = validateProfession(inputValidationProfession);
     
-    if (nomOk && prenomOk && mailOk && passwordOk && passwordConfirmOk && checkitOk && validationpdOk) {
+    if (nomOk && prenomOk && mailOk && passwordOk && passwordConfirmOk && checkitOk) {
       btnValidation.disabled = false;
     } 
     else {
@@ -95,17 +93,5 @@ function validateRequired(input) {
 
 }
 
-function validateProfession (input) {
-    if (input.value == '') {
-        input.classList.add("is-valid");
-        input.classList.remove("is-invalid");
-        return true;
-     } 
-     else {
-        input.classList.remove("is-valid");
-        input.classList.add("is-invalid");
-        return false;
-     }
-}
 
 
