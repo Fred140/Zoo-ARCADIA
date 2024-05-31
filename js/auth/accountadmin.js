@@ -15,6 +15,7 @@ inputValidationPassword.addEventListener("keyup", validateForm);
 
 
 
+
 function validateForm() {
     const nomOk = validateRequired(inputNom);
     const prenomOk = validateRequired(inputPrenom);
@@ -22,7 +23,8 @@ function validateForm() {
     const passwordOk = validatePassword(inputPassword);
     const passwordConfirmOk = validateConfirmationPassword(inputPassword, inputValidationPassword);
     
-    if (nomOk && prenomOk && mailOk && passwordOk && passwordConfirmOk && checkitOk) {
+    
+    if (nomOk && prenomOk && mailOk && passwordOk && passwordConfirmOk) {
       btnValidation.disabled = false;
     } 
     else {
@@ -92,6 +94,8 @@ function validateRequired(input) {
      }
 
 }
+
+
 
 
 
