@@ -39,22 +39,25 @@
            <label for="ValidatePasswordInput" class="form-label">Confirmer votre mot de passe</label>
            <input type="password" class="form-control" id="ValidatePasswordInput">
            <div class="invalid-feedback">
-            Mot de passe pas identique 
+            Mot de passe doit être identique 
         </div>
-        <div class="mb-3 pt-3 pb-3">
          </div>
-          <select class="form-select" aria-label="Default select example" id="Choix">
-          <option>Choisir une profession</option>
-          <option value="1">Vétérinaire</option>
-          <option value="2">Employé</option>
-          </select>
+         <div class="mb-3 pt-3 pb-3">
+         <label for="profession-select">D'abord, choisir la profession:</label><br/>
+         <select name="profession" id="profession-select">
+         <option value="">--Please choose an option--</option>
+         <option value="Vétérinaire">Vétérinaire</option>
+         <option value="Employé">Employé</option>
+         </select>
          </div>
         </div>
+        <div class="text-center pt-5 pb-5">
+          <button type="submit" class="btn btn-primary" id="btn-validation-inscription">Inscription</button>
+         </div>
      </form>
-     <div class="text-center">
-      <button type="submit" class="btn btn-primary" id="btn-validation-inscription">Inscription</button>
+     <div class="text-center mb-3">
       <a href="/gestioncompte"  type="button" class="btn btn-secondary">Gérer les comptes pro</a>
-      </div>
+    </div>
       <div class="text-center pt-5">
         <h4>Modification des pages:</h4>
         <a  href="/services" type="button" class="pd-3">Services à modifier</a><br/>

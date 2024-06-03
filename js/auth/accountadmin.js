@@ -5,15 +5,16 @@ const inputPrenom = document.getElementById("PrenomInput");
 const inputMail = document.getElementById("EmailInput");
 const inputPassword = document.getElementById("PasswordInput");
 const inputValidationPassword = document.getElementById("ValidatePasswordInput");
+const inputProfession =  document.getElementById("profession-select");
 const btnValidation = document.getElementById("btn-validation-inscription");
+
 
 inputNom.addEventListener("keyup", validateForm);
 inputPrenom.addEventListener("keyup", validateForm);
 inputMail.addEventListener("keyup", validateForm);
 inputPassword.addEventListener("keyup", validateForm);
 inputValidationPassword.addEventListener("keyup", validateForm);
-
-
+inputProfession.addEventListener("onclick", validateForm);
 
 
 function validateForm() {
@@ -22,9 +23,10 @@ function validateForm() {
     const mailOk = validateMail(inputMail);
     const passwordOk = validatePassword(inputPassword);
     const passwordConfirmOk = validateConfirmationPassword(inputPassword, inputValidationPassword);
+    const professionOk = validateProfession(inputProfession);
+
     
-    
-    if (nomOk && prenomOk && mailOk && passwordOk && passwordConfirmOk) {
+    if (nomOk && prenomOk && mailOk && passwordOk && passwordConfirmOk && professionOk) {
       btnValidation.disabled = false;
     } 
     else {
@@ -95,7 +97,13 @@ function validateRequired(input) {
 
 }
 
-
-
-
-
+function validateProfession (onclick) {
+      
+      if (onclick.value == "") {
+        alert ("Merci de sélectionner une profession!");
+        return false;
+      }
+      else {
+        return true;
+      }
+}
