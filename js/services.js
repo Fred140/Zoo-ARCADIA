@@ -1,26 +1,27 @@
-const servicesImage = document.getElementById ("allImage");
-const servicesImage2 = document.getElementById ("allImage2");
-const servicesImage3 = document.getElementById ("allImage3");
+const servicesImage = document.getElementById("allImage");
+const servicesImage2 = document.getElementById("allImage2");
+const servicesImage3 = document.getElementById("allImage3");
 
-let titre = 'hnlkjghkujhgkjhngjlk';
+let titre = ' <img class="rounded w-100" src="../Assets/petit train.jpg">';
 let imgSource = "../Assets/restaurant.jpg";
 
-let monImage = getImage (titre, imgSource);
-let monImage2 = getImage2 ("titre2", "../Assets/guide.jpg");
-let monImage3 = getImage3 ("titre3", "../Assets/petit train.jpg");
+let monImage = getImage(titre, imgSource);
+let monImage2 = getImage2("titre2", "../Assets/guide.jpg");
+let monImage3 = getImage3("titre3", "../Assets/petit train.jpg");
 
 servicesImage.innerHTML = monImage;
 servicesImage2.innerHTML = monImage2;
 servicesImage3.innerHTML = monImage3;
 
-function getImage (titre, urlImage) {
-    titre = sanitizeHtml (titre);
-    urlImage = sanitizeHtml (urlImage);
-     return `<div class="jumbotron rounded bg-primary text-center text-justify text-white">
-     <div class="action-image-buttons" data-show="admin">
-       <button class="button" class="btn btn-outline-light" data-bs-toggle="modal"
-         data-bs-target="#EditionTextModal"><i class="bi bi-pencil-square"></i></button>
-     </div>
+function getImage(titre, urlImage) {
+  titre = sanitizeHtml(titre);
+  urlImage = sanitizeHtml(urlImage);
+  return `<div class="col">
+         <div class="jumbotron rounded bg-primary text-center text-justify text-white">
+         <div class="action-image-buttons" data-show="admin">
+            <button class="button" class="btn btn-outline-light" data-bs-toggle="modal"
+            data-bs-target="#EditionTextModal"><i class="bi bi-pencil-square"></i></button>
+          </div>
      <h3 class="display-4 m-3">Le Restaurant</h3>
      <p class="lead m-3">Fast-foods pour familles, voyageurs et les curieux est situé dans le Parc Zoologique. Voici
        ce que vous pouvez y découvrir :<br />
@@ -37,11 +38,15 @@ function getImage (titre, urlImage) {
      </div>
      <img class="rounded w-100" src="${urlImage}">
      <p class="text-center id="EditionPhotoModal">${titre}</p>
+     </div>
    </div>`;
 }
 
-function getImage2 (titre2, urlImage2) {
-    return `<div class="jumbotron rounded bg-primary text-center text-justify text-white">
+function getImage2(titre2, urlImage2) {
+  titre2 = sanitizeHtml(titre2);
+  urlImage2 = sanitizeHtml(urlImage2);
+  return ` <div class="col">
+    <div class="jumbotron rounded bg-primary text-center text-justify text-white">
     <div class="action-image-buttons" data-show="admin">
       <button class="button" class="btn btn-outline-light" data-bs-toggle="modal"
         data-bs-target="#EditionTextModal"><i class="bi bi-pencil-square"></i></button>
@@ -57,11 +62,15 @@ function getImage2 (titre2, urlImage2) {
     </div>
     <img class="rounded w-100" src="${urlImage2}">
     <p class="text-center">${titre2}</p>
+  </div>
   </div>`;
 }
 
-function getImage3 (titre3, urlImage3) {
-    return `<<div class="jumbotron rounded bg-primary text-center text-justify text-white">
+function getImage3(titre3, urlImage3) {
+  titre3 = sanitizeHtml(titre3);
+  urlImage3 = sanitizeHtml(urlImage3);
+  return ` <div class="col">
+       <div class="jumbotron rounded bg-primary text-center text-justify text-white">
     <div class="action-image-buttons" data-show="admin">
       <button class="button" class="btn btn-outline-light" data-bs-toggle="modal"
         data-bs-target="#EditionTextModal"><i class="bi bi-pencil-square"></i></button>
@@ -77,6 +86,7 @@ function getImage3 (titre3, urlImage3) {
     </div>
     <img class="rounded w-100" src="${urlImage3}">
     <p class="text-center">${titre3}</p>
+  </div>
   </div>`;
 }
 
