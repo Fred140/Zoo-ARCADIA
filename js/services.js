@@ -36,7 +36,7 @@ function getImage(titre, urlImage) {
        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
          data-bs-target="#DeletePhotoModal"><i class="bi bi-trash"></i></button>
      </div>
-     <img class="rounded w-100" src="${urlImage}">
+     <img class="rounded w-100" src="${urlImage}" alt="Restaurant du Zoo"/>
      <p class="text-center id="EditionPhotoModal">${titre}</p>
      </div>
    </div>`;
@@ -60,7 +60,7 @@ function getImage2(titre2, urlImage2) {
       <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
         data-bs-target="#DeletePhotoModal"><i class="bi bi-trash"></i></button>
     </div>
-    <img class="rounded w-100" src="${urlImage2}">
+    <img class="rounded w-100" src="${urlImage2}" alt="Guide"/>
     <p class="text-center">${titre2}</p>
   </div>
   </div>`;
@@ -84,7 +84,7 @@ function getImage3(titre3, urlImage3) {
       <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
         data-bs-target="#DeletePhotoModal"><i class="bi bi-trash"></i></button>
     </div>
-    <img class="rounded w-100" src="${urlImage3}">
+    <img class="rounded w-100" src="${urlImage3}" alt="Petit train"/>
     <p class="text-center">${titre3}</p>
   </div>
   </div>`;
