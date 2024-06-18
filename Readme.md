@@ -44,6 +44,8 @@ https://github.com/Fred140/Zoo-ARCADIA
 
 Il comporte:
 
+A MODIFIER SI NECESSAIRE
+
 La charte graphique
 Le diagramme de cas d'utilisation réalisé sur visual paradigm
 le diagramme merise
