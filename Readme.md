@@ -1,26 +1,51 @@
-Ajouter un domaine local avec XAMPP
+Projet de Zoo fictif pour l'évaluation en cours de formation de l'école Studi Graduate Développeur Angular 2023-2029 Promo NOVEMBRE-DÉCEMBRE 2024
 
+Lien Github du projet : 
 
-Ajouter un domaine local présente plusieurs avantages, notamment :
-    1. Accès aux ressources partagées : Lorsque vous ajoutez un ordinateur à un domaine, vous pouvez accéder aux ressources partagées sur le réseau du domaine.
-    2. Politique de sécurité et de configuration centralisées : Les politiques de sécurité et de configuration peuvent être appliquées de manière centralisée à tous les ordinateurs du domaine.
-    3. Gestion sécurisée des informations : Active Directory Services (ADDS) aide les administrateurs à gérer de manière sécurisée les informations et facilite la collaboration entre les utilisateurs d’un même domaine.
-    4. Contrôle des droits administrateurs : Vous  pouvez modifier les utilisateurs ayant les droits administrateurs sur les PC juste en les plaçant dans un groupe spécifique.
+Lien du déploiement :
 
+Les prérequis:
 
-Sous windows :
-Ouvrir le fichier c:\Windows\System32\drivers\etc\hosts
-127.0.0.1 monprojet.local
+Assurez vous d'avoir sur votre machine:
 
+Git que vous pouvez télécharger ici : https://git-scm.com/downloads
 
-Sur Xampp :
-Nous allons ensuite devoir indiquer à apache vers quel dossier le domaine doit pointer.
-Pour cela il faut modifier le fichier httpd-vhosts.conf
-C:\xampp\apache\conf\extra\http-vhosts.conf
-et ajouter la configuration en adaptant les informations 
-<VirtualHost*:80>
-    DocumentRoot "C:\xampp\www\mon_projet"
-    ServerName monprojet.local
-</VirtualHost>
+Composer que vous pouvez télécharger ici : https://getcomposer.org
 
-Il faut ensuite redémarrer le serveur 
+Xampp (où vous pourrez installer le projet dans le dossier htdocs pour le faire fonctionner en local)
+
+PHP version 8.2.12 à la racine de votre machine
+
+Après installation de PHP assurez vous que le php.exe est bien dans votre PATH des variables d'environnement
+dans le fichier PHP.ini de votre PHP : décommenter extension=zip (en retirant le ";" devant)
+Vous devrez ensuite installer scoop , vous trouverez toutes les informations nécessaire à son téléchargement ici https://scoop.sh/
+
+L'installation de scoop servira à installer Symfony CLI que vous pourrez installer en tapant cette ligne de commande dans votre powershell windows $ scoop install symfony-cli
+
+Vous pourrez grâce à cela utiliser la commande symfony dans votre terminal d'IDE.
+
+Une fois dans le répertoire qui doit ressembler à ceci : C:\xampp\htdocs
+
+Vous pouvez cloner le projet en écrivant dans votre terminal cette commande
+
+git clone https://github.com/Fred140/Zoo-ARCADIA.git
+
+Une fois le répertoire cloné vous pouvez commencer le faire fonctionner en local en utilisant la commande de terminal symfony server:start
+
+Dès que le serveur sera lancé rendez-vous sur localhost:8000/accueil.
+
+Vous pourrez voir dans votre navigateur le projet tourner en local.
+
+Dans le workspace de l'ecf vous trouverez un dossier technique.
+
+disponible dans le repository github à cette adresse :
+
+https://github.com/Fred140/Zoo-ARCADIA
+
+Il comporte:
+
+La charte graphique
+Le diagramme de cas d'utilisation réalisé sur visual paradigm
+le diagramme merise
+Le Wireframe de l'application réalisé sur Balsamiq
+le TP dev en pdf
