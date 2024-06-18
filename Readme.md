@@ -4,6 +4,9 @@ Lien Github du projet : https://github.com/Fred140/Zoo-ARCADIA
 
 Lien du déploiement :
 
+Pour la gestion de projet, je vais utiliser Trello, en forme kanban : 
+Je découpe en 2 phases,  première phase, hors développement et la deuxième, en développement avec le code à faire, à tester sur une branche développement et terminé qui merge vers la branche principale. 
+
 Les prérequis:
 
 Assurez vous d'avoir sur votre machine:
