@@ -1,6 +1,6 @@
-Projet de Zoo fictif pour l'évaluation en cours de formation de l'école Studi Graduate Développeur Angular 2023-2029 Promo NOVEMBRE-DÉCEMBRE 2024
+Projet de Zoo ARCADIA fictif pour l'évaluation en cours de formation de l'école Studi Graduate Développeur Angular 2023-2029 Promo NOVEMBRE-DÉCEMBRE 2024
 
-Lien Github du projet : 
+Lien Github du projet : https://github.com/Fred140/Zoo-ARCADIA
 
 Lien du déploiement :
 
