@@ -50,7 +50,8 @@ Il comporte:
 A MODIFIER SI NECESSAIRE
 
 La charte graphique
-Le diagramme de cas d'utilisation réalisé sur visual paradigm
+Le diagramme de cas d'utilisation réalisé sur draw.io
 le diagramme merise
-Le Wireframe de l'application réalisé sur Balsamiq
+(Le Wireframe de l'application réalisé sur Balsamiq)
+Mockup réalisé sur Figma 
 le TP dev en pdf
